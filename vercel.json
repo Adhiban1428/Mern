@@ -1,0 +1,5 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "book-review-app/frontend/dist",
+  "installCommand": "npm install && cd book-review-app/frontend && npm install"
+}

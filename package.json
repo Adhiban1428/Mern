@@ -10,7 +10,7 @@
     "frontend:dev": "cd book-review-app/frontend && npm run dev",
     "frontend:start": "cd book-review-app/frontend && npm start",
     "install:all": "cd book-review-app/backend && npm install && cd ../frontend && npm install",
-    "build": "cd book-review-app/frontend && npm run build"
+    "build": "cd book-review-app/frontend && npm install && npm run build"
   },
   "devDependencies": {
     "concurrently": "^7.6.0"
