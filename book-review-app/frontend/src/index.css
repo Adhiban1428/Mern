@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Brown Primary Colors */
+  --primary-brown: #8B4513;
+  --primary-chocolate: #D2691E;
+  --primary-coffee: #6F4E37;
+  --primary-mahogany: #C04000;
+  
+  /* Secondary Browns */
+  --secondary-tan: #D2B48C;
+  --secondary-sienna: #A0522D;
+  --secondary-chestnut: #954535;
+  --secondary-bronze: #CD7F32;
+  
+  /* Accent Colors */
+  --accent-gold: #FFD700;
+  --accent-amber: #FFBF00;
+  --accent-copper: #B87333;
+  --accent-cream: #F5F5DC;
+  
+  /* Neutral Colors */
+  --neutral-white: #FFFFFF;
+  --neutral-cream: #FDF6E3;
+  --neutral-beige: #F5F5DC;
+  --neutral-sand: #F4A460;
+  --neutral-wheat: #F5DEB3;
+  --neutral-brown-100: #EFEBE9;
+  --neutral-brown-200: #D7CCC8;
+  --neutral-brown-300: #BCAAA4;
+  --neutral-brown-400: #A1887F;
+  --neutral-brown-500: #8D6E63;
+  --neutral-brown-600: #795548;
+  --neutral-brown-700: #6D4C41;
+  --neutral-brown-800: #5D4037;
+  --neutral-brown-900: #3E2723;
+  
+  /* Text Colors */
+  --text-primary: #2C1810;
+  --text-secondary: #5D4037;
+  --text-muted: #8D6E63;
+  --text-white: #FFFFFF;
+  --text-cream: #FDF6E3;
+  --text-light: #F5DEB3;
+  
+  /* Background Colors */
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #F5F5DC;
+  --bg-tertiary: #EFEBE9;
+  --bg-dark: #3E2723;
+  --bg-darker: #2C1810;
+  
+  /* Balanced Brown Gradients */
+  --gradient-primary: linear-gradient(135deg, #6D4C41 0%, #8D6E63 100%);
+  --gradient-secondary: linear-gradient(135deg, #A1887F 0%, #BCAAA4 100%);
+  --gradient-hero: linear-gradient(135deg, #3E2723 0%, #6D4C41 50%, #A1887F 100%);
+  --gradient-warm: linear-gradient(135deg, #F5F5DC 0%, #EFEBE9 50%, #D7CCC8 100%);
+  
+  /* Typography */
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
+  
+  /* Shadows */
+  --shadow-soft: 0 4px 20px rgba(139, 21, 56, 0.1);
+  --shadow-medium: 0 8px 30px rgba(139, 21, 56, 0.15);
+  --shadow-strong: 0 12px 40px rgba(139, 21, 56, 0.2);
+  
+  /* Border Radius */
+  --radius-small: 8px;
+  --radius-medium: 16px;
+  --radius-large: 24px;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--gradient-warm);
+  color: var(--text-primary);
+  line-height: 1.6;
+  font-weight: 400;
+  min-height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}
+
+input, textarea, select {
+  font-family: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+}

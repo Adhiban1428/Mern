@@ -1,0 +1,20 @@
+{
+  "name": "booksy",
+  "version": "1.0.0",
+  "description": "Booksy - Your Ultimate Book Review Platform",
+  "scripts": {
+    "dev": "concurrently \"npm run backend:dev\" \"npm run frontend:dev\"",
+    "start": "concurrently \"npm run backend:start\" \"npm run frontend:start\"",
+    "backend:dev": "cd book-review-app/backend && npm run dev",
+    "backend:start": "cd book-review-app/backend && npm start",
+    "frontend:dev": "cd book-review-app/frontend && npm run dev",
+    "frontend:start": "cd book-review-app/frontend && npm start",
+    "install:all": "cd book-review-app/backend && npm install && cd ../frontend && npm install",
+    "build": "cd book-review-app/frontend && npm run build"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
